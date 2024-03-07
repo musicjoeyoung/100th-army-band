@@ -1,8 +1,9 @@
 @use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
 
 .navbar {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
     background-color: $yellow;
     height: 65px;
@@ -11,15 +12,61 @@
     width: 100%;
     z-index: 10;
 
+    @include tablet {
+        display: block;
+    }
+
     &__link {
         color: black;
         transition: color 0.3s;
         &:hover {
             color: red;
         }
-
         &--active {
             color: blue;
+        }
+    }
+
+    &__hamburger {
+        display: block;
+        cursor: pointer;
+
+        @include tablet {
+            display: none;
+        }
+
+        &-line {
+            width: 30px;
+            height: 3px;
+            background-color: black;
+            margin: 5px;
+        }
+    }
+
+    &__links {
+        display: flex;
+
+        @include tablet {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 65px;
+        }
+
+        @media (max-width: $tablet-width) {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 65px;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        &--open {
+            display: flex;
         }
     }
 }
