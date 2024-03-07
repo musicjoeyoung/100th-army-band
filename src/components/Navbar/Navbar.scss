@@ -1,0 +1,25 @@
+@use "../../partials/variables" as *;
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $yellow;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    &__link {
+        color: black;
+        transition: color 0.3s;
+        &:hover {
+            color: red;
+        }
+
+        &--active {
+            color: blue;
+        }
+    }
+}
