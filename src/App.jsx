@@ -9,6 +9,7 @@ import Media from './pages/Media/Media'
 import Jobs from './pages/Jobs/Jobs'
 import Contact from './pages/Contact/Contact'
 import ErrorNotFound from './pages/ErrorNotFound/ErrorNotFound'
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<ErrorNotFound />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
 
   )

@@ -1,0 +1,21 @@
+@use "../../partials/variables" as *;
+
+.footer {
+    background-color: $yellow;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 1rem;
+    padding-bottom: 1rem;
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+    a {
+        font-size: 0.8rem;
+    }
+}

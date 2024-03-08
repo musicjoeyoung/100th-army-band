@@ -39,6 +39,8 @@ const Jobs = () => {
             section.scrollIntoView({ behavior: "smooth" });
         }
     };
+
+
     return (
         <main className="jobs-main">
             <h1>Join the 100th Army Band</h1>

@@ -1,0 +1,37 @@
+.history-main {
+    margin-top: 5rem;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.timeline-interactive {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid black;
+}
+
+.timeline-text {
+    padding: 5rem;
+    line-height: 2rem;
+
+    &__p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        &:nth-child(odd) {
+            background-color: lightgray;
+        }
+        &:nth-child(even) {
+            background-color: inherit;
+        }
+        border-bottom: none;
+    }
+}
+.campaign-credits {
+    text-align: center;
+}
+.campaign-credits li {
+    list-style: none;
+}
