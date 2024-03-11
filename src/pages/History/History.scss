@@ -1,4 +1,6 @@
-.history-main {
+@use "../../partials/mixins" as *;
+
+.history {
     margin-top: 5rem;
 
     h1 {
@@ -14,8 +16,12 @@
 }
 
 .timeline-text {
-    padding: 5rem;
+    padding: 1rem;
     line-height: 2rem;
+
+    @include tablet {
+        padding: 5rem;
+    }
 
     &__p {
         margin-block-start: 0;
@@ -34,4 +40,5 @@
 }
 .campaign-credits li {
     list-style: none;
+    text-align: center;
 }

@@ -43,7 +43,8 @@ const Jobs = () => {
 
     return (
         <main className="jobs-main">
-            <h1>Join the 100th Army Band</h1>
+            <h1>Jobs</h1>
+            <p className="jobs-main__tag">Join the 100th Army Band!</p>
             <article className="jobs">
                 <h2>The Role of an Army Musician</h2>
                 <section className="jobs__section">

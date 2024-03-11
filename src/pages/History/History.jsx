@@ -1,9 +1,8 @@
 import "./History.scss"
 
-
 const History = () => {
     return (
-        <main className="history-main">
+        <main className="history">
             <h1>History</h1>
 
             <iframe className="timeline-interactive" src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1S0VKVaolwjVYVQ18FPVE--YYK0SQJ6uaolc5PHATn1I&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen frameBorder='0'></iframe>

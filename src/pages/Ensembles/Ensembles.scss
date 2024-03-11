@@ -1,0 +1,18 @@
+.ensembles {
+    margin-top: 5rem;
+
+    h1 {
+        text-align: center;
+    }
+}
+.section-selector {
+    text-align: center;
+}
+.ensemble {
+    text-align: center;
+
+    &__bio {
+        text-align: left;
+        padding: 0 3rem 0 3rem;
+    }
+}

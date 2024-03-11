@@ -2,7 +2,9 @@ import "./Media.scss"
 
 const Media = () => {
     return (
-        <div>Media</div>
+        <main className="media">
+            <h1>Media</h1>
+        </main>
     )
 }
 

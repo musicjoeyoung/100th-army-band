@@ -1,0 +1,23 @@
+@use "../../partials/mixins" as *;
+
+.terms-of-use {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.terms-description {
+    padding: 0 1rem 0 1rem;
+    text-align: left;
+
+    @include tablet {
+        padding: 0 3rem 0 3rem;
+    }
+}
+
+.link {
+    color: #d70f00;
+}
+
+.terms-list {
+    text-align: left;
+}

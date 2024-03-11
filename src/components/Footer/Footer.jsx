@@ -1,4 +1,5 @@
 import "./Footer.scss"
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -14,13 +15,13 @@ const Footer = () => {
                     US Army Bands
                 </a>
                 <a>Request the Band</a>
-                <a>Contact Webmaster</a>
+                <a href="mailto:joseph.m.young2@gmail.com">Contact Webmaster</a>
             </div>
 
             <div className="footer__section" >
                 <h3 >Important Links</h3>
-                <a>Terms of Use
-                </a>
+                <Link to="termsofuse">Terms of Use
+                </Link>
                 <a
                     href="https://www.goarmy.com/"
                     target="_blank">
