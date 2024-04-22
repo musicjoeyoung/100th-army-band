@@ -42,7 +42,7 @@ const MeetTheBand = () => {
                         {/* <h2>{member.section}</h2> */}
                         <div >
                             <h3>{member.name}</h3>
-                            <p className="member__bio">{renderBio(member.bio)}</p>
+                            <div className="member__bio">{renderBio(member.bio)}</div>
                         </div>
                     </div>
                 );

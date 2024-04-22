@@ -41,7 +41,7 @@ const Ensembles = () => {
                         <h2>{member.name}</h2>
                         <div >
                             <h3>{member.name}</h3>
-                            <p className="ensemble__bio">{renderBio(member.bio)}</p>
+                            <div className="ensemble__bio">{renderBio(member.bio)}</div>
                         </div>
                     </div>
                 );
